@@ -1,26 +1,18 @@
+import Header from '@/components/ui/Header';
+
 const Home = () => {
   return (
-    <div className="h-screen">
-      {/* header */}
-      <div className="flex justify-center w-screen">
-        <div className="bg-[#1B1B1B] w-[100%] sm:w-[100%] lg:w-[1024px] rounded-b-lg h-[60px] flex items-center justify-center">
-          <ul className="flex justify-evenly w-[100%] text-sm text-[#9C9C9C]">
-            <li className="hover:text-white hover:cursor-pointer">Home</li>
-            <li className="hover:text-white hover:cursor-pointer">
-              Experience
-            </li>
-            <li className="hover:text-white hover:cursor-pointer">Projects</li>
-            <li className="hover:text-white hover:cursor-pointer">
-              Get In Touch
-            </li>
-            <li className="hover:text-white hover:cursor-pointer">LinkedIn</li>
-          </ul>
-        </div>
-      </div>
+    <div className="h-screen bg-white">
+      <Header />
 
-      <main>
-        <div>BODY</div>
-      </main>
+      {/* Home */}
+      <div id="home" className=" bg-[#080808] h-screen"></div>
+      {/* Experience */}
+      <div id="experience" className=" bg-white h-screen"></div>
+      {/* Projects */}
+      <div id="projects" className=" bg-[#080808] h-screen"></div>
+      {/* Get In Touch */}
+      <div id="get-in-touch" className=" bg-white h-screen"></div>
     </div>
   );
 };
