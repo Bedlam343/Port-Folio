@@ -1,9 +1,17 @@
+'use client';
 import Header from '@/components/ui/Header';
 
 const Home = () => {
+  const scrollToSection = (id: string) => {
+    const div = document.getElementById(id);
+    if (div) {
+      div.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="h-screen bg-white">
-      <Header />
+      <Header onLinkClick={scrollToSection} />
 
       {/* Home */}
       <div id="home" className=" bg-[#080808] h-screen"></div>
