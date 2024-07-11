@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="h-screen bg-white">
       <Header onLinkClick={scrollToSection} />
-      <About id="about" />
+      <About id="about" onLinkClick={scrollToSection} />
 
       {/* Experience */}
       <div id="experience" className="bg-white h-screen"></div>
