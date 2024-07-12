@@ -1,3 +1,5 @@
+import Skills from '@/components/ui/Skills';
+
 type AboutProps = {
   id: string;
   onLinkClick: (id: string) => void;
@@ -7,7 +9,7 @@ const About = ({ id, onLinkClick }: AboutProps) => {
   return (
     <div
       id={id}
-      className="bg-[#080808] h-screen flex items-center justify-center"
+      className="bg-[#080808] h-screen flex flex-col items-center justify-center gap-10"
     >
       <div className="w-[100%] sm:w-[100%] lg:w-[1024px] px-20 gap-10 flex justify-between">
         <div className="w-[500px] py-20">
@@ -28,10 +30,12 @@ const About = ({ id, onLinkClick }: AboutProps) => {
         </div>
       </div>
 
+      <Skills />
+
       {/* Bouncing arrow */}
       <div className="absolute bottom-10 animate-bounce ">
         <div
-        onClick={() => onLinkClick('experience')}
+          onClick={() => onLinkClick('experience')}
           className="w-[25px] h-[25px] border-r-2 border-b-2 
         border-white hover:cursor-pointer rotate-45"
         />

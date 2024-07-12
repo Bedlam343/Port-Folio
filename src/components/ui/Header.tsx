@@ -7,7 +7,7 @@ type HeaderProps = {
 const Header = ({ onLinkClick }: HeaderProps) => {
   return (
     <div className="flex justify-center">
-      <div className="fixed top-0 bg-[#1B1B1B] w-[100%] sm:w-[100%] lg:w-[1024px] rounded-b-lg h-[50px] flex items-center justify-center">
+      <div className="absolute top-0 bg-[#1B1B1B] w-[100%] sm:w-[100%] lg:w-[1024px] rounded-b-lg h-[50px] flex items-center justify-center">
         <ul className="flex justify-evenly w-[100%] text-sm text-[#9C9C9C]">
           <li
             onClick={() => onLinkClick('about')}
