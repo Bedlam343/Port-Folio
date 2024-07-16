@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
-import Header from '@/components/ui/Header';
-import About from '@/components/ui/About';
+import Header from '@/components/Header';
+import About from '@/components/About';
 import scrollTo from '@/utils/scrollToSection';
 
 const Home = () => {
