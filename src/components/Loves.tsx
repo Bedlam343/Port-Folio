@@ -6,11 +6,11 @@ import Card from '@/components/Card';
 
 const Loves = () => {
   return (
-    <div className="w-[100%] sm:w-[100%] lg:w-[1024px] px-20">
-      <p className="font-mono mb-2">Great With:</p>
+    <div className="w-[100%] sm:w-[100%] lg:w-[1024px] px-20 bg-[#080808]">
+      <p className="font-mono mb-2">Primary Skills:</p>
 
       <div
-        className="w-[100%] px-4 grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6  
+        className="w-[100%] px-4 grid grid-cols-4 sm:grid-cols-6  
       gap-1 sm:gap-2 md:gap-4"
       >
         <Card tooltip="React">
@@ -107,6 +107,18 @@ const Loves = () => {
             src="/jest-logo-colored.png"
             alt="Jest Logo"
           />
+        </Card>
+
+        {/* Spinner - Loading more skills */}
+        <Card tooltip="Brewing More...">
+          <div className="h-[50px] flex items-center justify-center">
+            <div className="animate-spin h-5 w-5">
+              <div
+                className="h-[100%] w-[100%] border-4 border-t-white border-b-[#9C9C9C]
+               border-x-[#9C9C9C] rounded-full"
+              />
+            </div>
+          </div>
         </Card>
       </div>
     </div>
