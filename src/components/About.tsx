@@ -1,4 +1,4 @@
-import Loves from '@/components/Loves';
+import Loves from '@/components/Skills';
 
 type AboutProps = {
   id: string;

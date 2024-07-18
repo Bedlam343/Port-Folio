@@ -1,10 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Card from '@/components/Card';
 
-// TODO: Add more skills. Secondary skills?
-// Make the skills responsive. Change number of columns based on screen size.
-
-const Loves = () => {
+const Skills = () => {
   return (
     <div className="w-[100%] sm:w-[100%] lg:w-[1024px] px-20 bg-[#080808]">
       <p className="font-mono mb-2">Primary Skills:</p>
@@ -125,4 +122,4 @@ const Loves = () => {
   );
 };
 
-export default Loves;
+export default Skills;
