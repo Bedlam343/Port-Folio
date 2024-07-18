@@ -38,13 +38,13 @@ const About = ({ id, onLinkClick }: AboutProps) => {
         <Loves />
 
         {/* Bouncing arrow */}
-        {/* <div className="absolute bottom-6 animate-bounce">
+        <div className="absolute bottom-6 animate-bounce hidden sm:block">
           <div
             onClick={() => onLinkClick('experience')}
             className="w-[25px] h-[25px] border-r-2 border-b-2 
         border-white hover:cursor-pointer rotate-45"
           />
-        </div> */}
+        </div>
       </div>
     </div>
   );
