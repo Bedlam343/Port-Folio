@@ -1,3 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
+import Bubble from '@/components/ui/TextBubble';
+import Arrow from '@/components/ui/Arrow';
+import { useState } from 'react';
+
 type ExperienceProps = {
   id: string;
 };
@@ -5,14 +10,14 @@ type ExperienceProps = {
 const Experience = ({ id }: ExperienceProps) => {
   return (
     <div id={id} className="bg-white py-[60px] flex flex-col items-center">
-      <p className="text-[#080808] text-center text-4xl font-extrabold mb-[8px]">
+      <p className="text-[#080808] text-center text-4xl font-extrabold mb-[6px]">
         Experience
       </p>
-      <p className="text-[#9C9C9C] font-mono mb-[50px]">
-        To whom it may concern...
+      <p className="text-[#9C9C9C] font-mono mb-[45px]">
+        Quality over Quantity
       </p>
 
-      <div className="flex flex-col gap-[50px] w-[100%] sm:max-w-[892px]">
+      <div className="flex flex-col gap-[45px] w-[100%] sm:max-w-[892px]">
         <div className="min-h-[300px] flex">
           <div className="w-[50%] pt-[25px] ">
             {/* <div className="bg-[#FFF6E9] ml-[10px] w-fit px-4 py-1 font-bold rounded-full mb-[15px]">
@@ -48,13 +53,27 @@ const Experience = ({ id }: ExperienceProps) => {
               <br />
               Theia was then demonstrated via a Multi-Modal Adaptive UI that
               allowed a fighter jet pilot to control many fighter drones while
-              also piloting their ownship. The UI adapts to the pilot's changing
-              stress level, as well as to world events, to aid the pilot in
-              critical decision making during high-stress conditions.
+              also piloting their ownship. The UI adapts to the pilot{"'"}s
+              changing stress level, as well as to world events, to aid the
+              pilot in critical decision making during high-stress conditions.
             </p>
+
+            <div className="flex mt-4 gap-3 flex-wrap">
+              {['React', 'Redux', 'TypeScript', 'TailwindCSS'].map((tech) => (
+                <Bubble
+                  key={tech}
+                  text={tech}
+                  bgColor="#FFF6E9"
+                  textColor="#FFA217"
+                />
+              ))}
+            </div>
           </div>
 
-          <div className="w-[50%] flex items-center justify-center relative">
+          <div
+            id="sri-picture"
+            className="w-[50%] flex items-center justify-center relative"
+          >
             <img
               className="w-[60%] rounded-sm"
               src="sri-logo.png"
@@ -70,6 +89,23 @@ const Experience = ({ id }: ExperienceProps) => {
         </div>
 
         <div className="min-h-[300px] flex">
+          <div
+            id="promaxo-picture"
+            className="w-[50%] flex items-center justify-center relative"
+          >
+            <img
+              className="w-[100%] rounded-sm"
+              src="promaxo-logo.webp"
+              alt="Promaxo Logo"
+            />
+
+            {/* <a
+              href="https://promaxo.com/"
+              className="absolute h-[100%] w-[50%]"
+              target="_blank"
+            /> */}
+          </div>
+
           <div className="w-[50%] pt-[25px]">
             {/* <div className="bg-[#D0E6FF] ml-[10px] w-fit px-4 py-1 font-bold rounded-full mb-[15px]">
               <a
@@ -95,20 +131,27 @@ const Experience = ({ id }: ExperienceProps) => {
               performed unit and integration testing to ensure code integrity
               and quality.
             </p>
-          </div>
 
-          <div className="w-[50%] flex items-center justify-center relative">
-            <img
-              className="w-[100%] rounded-sm"
-              src="promaxo-logo.webp"
-              alt="Promaxo Logo"
-            />
-
-            {/* <a
-              href="https://promaxo.com/"
-              className="absolute h-[100%] w-[50%]"
-              target="_blank"
-            /> */}
+            <div className="flex mt-4 flex-wrap gap-3">
+              {[
+                'React',
+                'Redux',
+                'Node.js',
+                'JavaScript',
+                'MongoDB',
+                'HTML',
+                'CSS',
+                'GCP',
+                'MUI',
+              ].map((tech) => (
+                <Bubble
+                  key={tech}
+                  text={tech}
+                  bgColor="#D0E6FF"
+                  textColor="#000AFF"
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

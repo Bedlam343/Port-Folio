@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Card from '@/components/Card';
+import Card from '@/components/ui/Card';
 
 const Skills = () => {
   return (
