@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import About from '@/components/About';
 import scrollTo from '@/utils/scrollToSection';
 import Experience from '@/components/Experience';
+import Projects from '@/components/Projects';
 
 const Home = () => {
   const scrollToSection = (id: string) => {
@@ -19,9 +20,7 @@ const Home = () => {
       <Header onLinkClick={scrollToSection} />
       <About id="about" onLinkClick={scrollToSection} />
       <Experience id="experience" />
-
-      {/* Projects */}
-      <div id="projects" className="bg-[#080808] h-screen"></div>
+      <Projects id="projects" />
       {/* Get In Touch */}
       <div id="get-in-touch" className="bg-white h-screen"></div>
     </div>

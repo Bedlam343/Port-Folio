@@ -13,13 +13,13 @@ const Experience = ({ id }: ExperienceProps) => {
       <p className="text-[#080808] text-center text-4xl font-extrabold mb-[6px]">
         Experience
       </p>
-      <p className="text-[#9C9C9C] font-mono mb-[45px]">
+      <p className="text-[#9C9C9C] mb-[5px] sm:mb-[45px]">
         Quality over Quantity
       </p>
 
-      <div className="flex flex-col gap-[45px] w-[100%] sm:max-w-[892px]">
-        <div className="min-h-[300px] flex">
-          <div className="w-[50%] pt-[25px] ">
+      <div className="flex flex-col gap-[15px] sm:gap-[45px] w-[100%] sm:px-8 md:px-6 lg:px-4 sm:max-w-[908px]">
+        <div className="min-h-[300px] flex flex-col-reverse sm:flex-row">
+          <div className="w-[100%] px-6 sm:px-0 sm:w-[50%] sm:pt-[25px]">
             {/* <div className="bg-[#FFF6E9] ml-[10px] w-fit px-4 py-1 font-bold rounded-full mb-[15px]">
               <a
                 className="text-[#FFA217]"
@@ -30,7 +30,7 @@ const Experience = ({ id }: ExperienceProps) => {
               </a>
             </div> */}
 
-            <p className="text-[#080808] font-extrabold text-2xl">
+            <p className="text-[#080808] font-extrabold text-xl sm:text-2xl">
               Student Software Engineer
             </p>
             <p className="text-[#9C9C9C] font-sans text-sm">
@@ -72,10 +72,10 @@ const Experience = ({ id }: ExperienceProps) => {
 
           <div
             id="sri-picture"
-            className="w-[50%] flex items-center justify-center relative"
+            className="w-[100%] sm:w-[50%] flex items-center justify-center relative"
           >
             <img
-              className="w-[60%] rounded-sm"
+              className="w-[50%] sm:w-[60%] rounded-sm"
               src="sri-logo.png"
               alt="SRI Logo"
             />
@@ -88,13 +88,13 @@ const Experience = ({ id }: ExperienceProps) => {
           </div>
         </div>
 
-        <div className="min-h-[300px] flex">
+        <div className="min-h-[300px] flex flex-col sm:flex-row">
           <div
             id="promaxo-picture"
-            className="w-[50%] flex items-center justify-center relative"
+            className="w-[100%] sm:w-[50%] flex items-center justify-center relative"
           >
             <img
-              className="w-[100%] rounded-sm"
+              className="w-[80%] sm:w-[100%] rounded-sm"
               src="promaxo-logo.webp"
               alt="Promaxo Logo"
             />
@@ -106,7 +106,7 @@ const Experience = ({ id }: ExperienceProps) => {
             /> */}
           </div>
 
-          <div className="w-[50%] pt-[25px]">
+          <div className="w-[100%] px-6 sm:px-0 sm:w-[50%] sm:pt-[25px]">
             {/* <div className="bg-[#D0E6FF] ml-[10px] w-fit px-4 py-1 font-bold rounded-full mb-[15px]">
               <a
                 className="text-[#000AFF]"
@@ -117,7 +117,7 @@ const Experience = ({ id }: ExperienceProps) => {
               </a>
             </div> */}
 
-            <p className="text-[#080808] font-extrabold text-2xl">
+            <p className="text-[#080808] font-extrabold text-xl sm:text-2xl">
               Full-Stack Engineering Intern
             </p>
             <p className="text-[#9C9C9C] font-sans text-sm">
