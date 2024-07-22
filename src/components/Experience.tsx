@@ -10,12 +10,12 @@ type ExperienceProps = {
 const Experience = ({ id }: ExperienceProps) => {
   return (
     <div id={id} className="bg-white py-[60px] flex flex-col items-center">
-      <p className="text-[#080808] text-center text-4xl font-extrabold mb-[6px]">
+      <p className="text-[#080808] text-center text-4xl font-extrabold mb-[5px] sm:mb-[45px]">
         Experience
       </p>
-      <p className="text-[#9C9C9C] mb-[5px] sm:mb-[45px] font-mono">
-        Quality over Quantity
-      </p>
+      {/* <p className="text-[#9C9C9C] mb-[5px] sm:mb-[45px] font-mono">
+        (Done With Dedication)
+      </p> */}
 
       <div className="flex flex-col gap-[15px] sm:gap-[45px] w-[100%] sm:px-8 md:px-6 lg:px-4 sm:max-w-[908px]">
         <div className="min-h-[300px] flex flex-col-reverse sm:flex-row">
@@ -91,7 +91,7 @@ const Experience = ({ id }: ExperienceProps) => {
         <div className="min-h-[300px] flex flex-col sm:flex-row">
           <div
             id="promaxo-picture"
-            className="w-[100%] sm:w-[50%] flex items-center justify-center relative"
+            className="w-[100%] sm:w-[50%] flex items-center justify-center relative pr-auto sm:pr-8"
           >
             <img
               className="w-[80%] sm:w-[100%] rounded-sm"
