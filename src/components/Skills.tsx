@@ -3,7 +3,7 @@ import Card from '@/components/ui/Card';
 
 const Skills = () => {
   return (
-    <div className="w-[100%] sm:w-[100%] lg:w-[1024px] px-20 bg-[#080808]">
+    <div className="w-[100%] sm:w-[100%] lg:w-[1024px] px-10 sm:px-20 bg-[#080808]">
       <p className="font-mono mb-2">Primary Skills:</p>
 
       <div

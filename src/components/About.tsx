@@ -1,4 +1,4 @@
-import Loves from '@/components/Skills';
+import Skills from '@/components/Skills';
 
 type AboutProps = {
   id: string;
@@ -7,7 +7,7 @@ type AboutProps = {
 
 const About = ({ id, onLinkClick }: AboutProps) => {
   return (
-    <div className="bg-[#080808] h-auto sm:h-screen pt-[50px]">
+    <div className="bg-[#080808] h-auto pb-8 sm:pb-auto sm:h-screen pt-[50px]">
       <div className="h-[100%] flex flex-col items-center justify-center sm:gap-10">
         <div
           className="w-[100%] lg:w-[1024px] px-10 sm:px-20 gap-10 
@@ -35,7 +35,7 @@ const About = ({ id, onLinkClick }: AboutProps) => {
           </div>
         </div>
 
-        <Loves />
+        <Skills />
 
         {/* Bouncing arrow */}
         <div className="absolute bottom-6 animate-bounce hidden sm:block">

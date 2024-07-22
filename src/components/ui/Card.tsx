@@ -25,7 +25,7 @@ rounded-sm ${hover}`}
       {tooltip && (
         <span
           className="pointer-events-none absolute w-max top-[25px]
-          opacity-0 transition-opacity group-hover:opacity-100 text-[10px] 
+          opacity-0 transition-opacity group-hover:opacity-100 text-[9.5px] 
           sm:text-[12px] text-sm"
         >
           {tooltip}

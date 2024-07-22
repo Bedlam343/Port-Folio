@@ -13,7 +13,7 @@ const Experience = ({ id }: ExperienceProps) => {
       <p className="text-[#080808] text-center text-4xl font-extrabold mb-[6px]">
         Experience
       </p>
-      <p className="text-[#9C9C9C] mb-[5px] sm:mb-[45px]">
+      <p className="text-[#9C9C9C] mb-[5px] sm:mb-[45px] font-mono">
         Quality over Quantity
       </p>
 
