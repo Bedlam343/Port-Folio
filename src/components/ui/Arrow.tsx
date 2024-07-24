@@ -14,7 +14,7 @@ const Arrow = ({ size }: ArrowProps = defaultProps) => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="black"
-      className={`size-${size}`}
+      className={`size-${2}`}
     >
       <path
         strokeLinecap="round"

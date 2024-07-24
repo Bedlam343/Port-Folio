@@ -35,7 +35,7 @@ type BackProps = {
 const Back = ({ children }: BackProps) => {
   return (
     <div
-      className="absolute inset-0 h-full w-full bg-black/60 [transform:rotateY(180deg)]
+      className="absolute inset-0 h-full w-full bg-black/75 [transform:rotateY(180deg)]
       [backface-visibility:hidden]"
     >
       {children}
