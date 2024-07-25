@@ -1,6 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import TextBubble from '@/components/ui/TextBubble';
-
 type ExperienceProps = {
   id: string;
 };

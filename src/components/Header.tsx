@@ -14,29 +14,45 @@ const Header = ({ onLinkClick }: HeaderProps) => {
         <ul className="flex justify-evenly w-[100%] text-sm text-[#9C9C9C]">
           <li
             onClick={() => onLinkClick('about')}
-            className="hover:text-white hover:cursor-pointer"
+            className="hover:text-white hover:cursor-pointer flex items-center"
           >
             Home
           </li>
           <li
             onClick={() => onLinkClick('experience')}
-            className="hover:text-white hover:cursor-pointer"
+            className="hover:text-white hover:cursor-pointer flex items-center"
           >
             Experience
           </li>
           <li
             onClick={() => onLinkClick('projects')}
-            className="hover:text-white hover:cursor-pointer"
+            className="hover:text-white hover:cursor-pointer flex items-center"
           >
             Projects
           </li>
           <li
             onClick={() => onLinkClick('get-in-touch')}
-            className="hover:text-white hover:cursor-pointer"
+            className="hover:text-white hover:cursor-pointer flex items-center"
           >
             Get In Touch
           </li>
-          <li className="hover:text-white hover:cursor-pointer">LinkedIn</li>
+          <li className="flex gap-2">
+            <a
+              href="https://www.linkedin.com/in/singhjagjit01/"
+              target="_blank"
+              className="hover:cursor-pointer"
+            >
+              <img src="linkedin-logo.png" className="w-[35px]" />
+            </a>
+
+            <a
+              href="https://github.com/Bedlam343?tab=repositories"
+              target="_blank"
+              className="rounded-full flex items-center hover:cursor-pointer"
+            >
+              <img src="github-logo.png" className="w-[27px]" />
+            </a>
+          </li>
         </ul>
       </div>
     </div>
