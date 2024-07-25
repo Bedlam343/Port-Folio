@@ -38,24 +38,17 @@ const Projects = ({ id }: ProjectsProps) => {
                   Multi-Modal Adaptive User Interfaces
                 </span>
                 , demonstrated via an adapative UI that allowed a fighter jet
-                pilot to control many fighter drones while also piloting their
-                own ship. The{' '}
+                pilot to{' '}
+                <span className="text-red-100">
+                  control many fighter drones
+                </span>{' '}
+                while also piloting their own ship. The{' '}
                 <span className="text-red-100">
                   UI adapted to changes in the pilot&apos;s stress level as well
                   as to external world events.
                 </span>
               </p>
             </div>
-
-            {/* <div className="flex justify-end w-[100%]">
-              <a
-                href="https://github.com/orgs/thi-sjsu-project/repositories"
-                target="_blank"
-                className="bg-white/80 hover:bg-red-100 px-3 py-1 rounded-xl"
-              >
-                <p className="text-[#080808]">Code</p>
-              </a>
-            </div> */}
           </div>
         </div>
 

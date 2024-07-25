@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Bubble from '@/components/ui/TextBubble';
-import Arrow from '@/components/ui/Arrow';
-import { useState } from 'react';
+import TextBubble from '@/components/ui/TextBubble';
 
 type ExperienceProps = {
   id: string;
@@ -40,7 +38,7 @@ const Experience = ({ id }: ExperienceProps) => {
               Collaborated with a multi-national and cross-functional team of 10
               students from San Jose State University and Technische Hochschule
               Ingolstadt to create a small suite of software, named{' '}
-              <span className="text-[#FFA217] font-bold hover:underline">
+              <span className="text-[#eea33b] font-bold hover:underline">
                 <a
                   href="https://github.com/orgs/thi-sjsu-project/repositories"
                   target="_blank"
@@ -60,12 +58,13 @@ const Experience = ({ id }: ExperienceProps) => {
 
             <div className="flex mt-4 gap-3 flex-wrap">
               {['React', 'Redux', 'TypeScript', 'TailwindCSS'].map((tech) => (
-                <Bubble
+                <div
                   key={tech}
-                  text={tech}
-                  bgColor="#FFF6E9"
-                  textColor="#FFA217"
-                />
+                  className="bg-[#fdefdb] rounded-full flex items-center justify-center
+                  w-fit px-4 py-1 font-bold"
+                >
+                  <p className="text-[#eea33b]">{tech}</p>
+                </div>
               ))}
             </div>
           </div>
@@ -144,12 +143,13 @@ const Experience = ({ id }: ExperienceProps) => {
                 'GCP',
                 'MUI',
               ].map((tech) => (
-                <Bubble
+                <div
                   key={tech}
-                  text={tech}
-                  bgColor="#D0E6FF"
-                  textColor="#000AFF"
-                />
+                  className="bg-[#D0E6FF] rounded-full flex items-center justify-center
+                  w-fit px-4 py-1 font-bold"
+                >
+                  <p className="text-[#2c8dfc]">{tech}</p>
+                </div>
               ))}
             </div>
           </div>

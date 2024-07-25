@@ -21,7 +21,7 @@ const Home = () => {
       <About id="about" onLinkClick={scrollToSection} />
       <Experience id="experience" />
       <Projects id="projects" />
-      {/* Get In Touch */}
+
       <div id="get-in-touch" className="bg-white h-screen"></div>
     </div>
   );
