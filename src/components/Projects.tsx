@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import FlipCard from '@/components/ui/FlipCard';
-
 type ProjectsProps = {
   id: string;
 };
@@ -15,10 +12,19 @@ const Projects = ({ id }: ProjectsProps) => {
         (Crafted With Love)
       </p> */}
 
-      <div className="grid grid-cols-2 py-8 sm:py-0 sm:w-[908px] gap-x-10 gap-y-14">
-        <div className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-2 pt-4 px-5 sm:py-0 sm:px-6 lg:px-0 sm:max-w-[908px] gap-x-10 gap-y-10 sm:gap-y-14">
+        <div
+          className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
+          overflow-hidden hover:cursor-pointer hover:border-red-300"
+        >
+          <a
+            className="h-full w-full absolute z-50"
+            href="https://github.com/orgs/thi-sjsu-project/repositories"
+            target="_blank"
+          />
+
           <img
-            className="w-full h-full object-cover opacity-35"
+            className="w-full h-full object-cover opacity-25"
             src="/projects/fighter-jets.jpg"
           />
 
@@ -41,7 +47,7 @@ const Projects = ({ id }: ProjectsProps) => {
               </p>
             </div>
 
-            <div className="flex justify-end w-[100%]">
+            {/* <div className="flex justify-end w-[100%]">
               <a
                 href="https://github.com/orgs/thi-sjsu-project/repositories"
                 target="_blank"
@@ -49,11 +55,20 @@ const Projects = ({ id }: ProjectsProps) => {
               >
                 <p className="text-[#080808]">Code</p>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
-        <div className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative overflow-hidden">
+        <div
+          className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
+          overflow-hidden hover:cursor-pointer hover:border-orange-200"
+        >
+          <a
+            className="h-full w-full absolute z-50"
+            href="https://bootcamper-h6l8.onrender.com"
+            target="_blank"
+          />
+
           <img
             className="w-full h-full object-cover opacity-10"
             src="/projects/skilled-coders.png"
@@ -82,28 +97,19 @@ const Projects = ({ id }: ProjectsProps) => {
                 created by other users.
               </p>
             </div>
-
-            <div className="flex justify-end w-[100%] gap-4">
-              <a
-                href="https://bootcamper-h6l8.onrender.com"
-                target="_blank"
-                className="bg-white/80 hover:bg-orange-100 px-3 py-1 rounded-xl"
-              >
-                <p className="text-[#080808]">Visit</p>
-              </a>
-
-              <a
-                href="https://github.com/Bedlam343/Bootcamper"
-                target="_blank"
-                className="bg-white/80 hover:bg-orange-100 px-3 py-1 rounded-xl"
-              >
-                <p className="text-[#080808]">Code</p>
-              </a>
-            </div>
           </div>
         </div>
 
-        <div className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative overflow-hidden">
+        <div
+          className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
+          overflow-hidden hover:cursor-pointer hover:border-pink-300"
+        >
+          <a
+            className="h-full w-full absolute z-50"
+            href="https://tic-tac-toe343.netlify.app"
+            target="_blank"
+          />
+
           <img
             className="w-full h-full object-cover opacity-40"
             src="/projects/tic-tac-toe.png"
@@ -126,28 +132,19 @@ const Projects = ({ id }: ProjectsProps) => {
                 make sure your opponent does not cheat.
               </p>
             </div>
-
-            <div className="flex justify-end w-[100%] gap-4">
-              <a
-                href="https://tic-tac-toe343.netlify.app"
-                target="_blank"
-                className="bg-white/80 hover:bg-amber-100 px-3 py-1 rounded-xl"
-              >
-                <p className="text-[#080808]">Visit</p>
-              </a>
-
-              <a
-                href="https://github.com/Bedlam343/Tic-Tac-Toe"
-                target="_blank"
-                className="bg-white/80 hover:bg-amber-100 px-3 py-1 rounded-xl"
-              >
-                <p className="text-[#080808]">Code</p>
-              </a>
-            </div>
           </div>
         </div>
 
-        <div className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative overflow-hidden">
+        <div
+          className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
+          overflow-hidden hover:cursor-pointer hover:border-blue-300"
+        >
+          <a
+            className="h-full w-full absolute z-50"
+            href="https://earnest-paprenjak-eae3b3.netlify.app"
+            target="_blank"
+          />
+
           <img
             className="w-full h-full object-cover opacity-10"
             src="/projects/calculator.png"
@@ -167,28 +164,19 @@ const Projects = ({ id }: ProjectsProps) => {
                 safely ditch all other calculators you have (at your own risk).
               </p>
             </div>
-
-            <div className="flex justify-end w-[100%] gap-4">
-              <a
-                href="https://earnest-paprenjak-eae3b3.netlify.app"
-                target="_blank"
-                className="bg-white/80 hover:bg-amber-100 px-3 py-1 rounded-xl"
-              >
-                <p className="text-[#080808]">Visit</p>
-              </a>
-
-              <a
-                href="https://github.com/Bedlam343/Calculator"
-                target="_blank"
-                className="bg-white/80 hover:bg-amber-100 px-3 py-1 rounded-xl"
-              >
-                <p className="text-[#080808]">Code</p>
-              </a>
-            </div>
           </div>
         </div>
 
-        <div className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative overflow-hidden">
+        <div
+          className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
+          overflow-hidden hover:cursor-pointer hover:border-green-300"
+        >
+          <a
+            className="h-full w-full absolute z-50"
+            href="https://labyrinthus.netlify.app/"
+            target="_blank"
+          />
+
           <img
             className="w-full h-full object-cover opacity-10"
             src="/projects/maze.png"
@@ -210,28 +198,19 @@ const Projects = ({ id }: ProjectsProps) => {
                 looking for a challenging and fun time.
               </p>
             </div>
-
-            <div className="flex justify-end w-[100%] gap-4">
-              <a
-                href="https://labyrinthus.netlify.app/"
-                target="_blank"
-                className="bg-white/80 hover:bg-green-100 px-3 py-1 rounded-xl"
-              >
-                <p className="text-[#080808]">Visit</p>
-              </a>
-
-              <a
-                href="https://github.com/Bedlam343/A-Maze-Ing"
-                target="_blank"
-                className="bg-white/80 hover:bg-green-100 px-3 py-1 rounded-xl"
-              >
-                <p className="text-[#080808]">Code</p>
-              </a>
-            </div>
           </div>
         </div>
 
-        <div className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative overflow-hidden">
+        <div
+          className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
+          overflow-hidden hover:cursor-pointer hover:border-amber-300"
+        >
+          <a
+            className="h-full w-full absolute z-50"
+            href="https://github.com/Bedlam343/Unjumbler"
+            target="_blank"
+          />
+
           <img
             className="w-full h-full object-cover opacity-15"
             src="/projects/unjumbler.jpg"
@@ -253,19 +232,17 @@ const Projects = ({ id }: ProjectsProps) => {
                 love.
               </p>
             </div>
-
-            <div className="flex justify-end w-[100%]">
-              <a
-                href="https://github.com/orgs/thi-sjsu-project/repositories"
-                target="_blank"
-                className="bg-white/80 hover:bg-amber-100 px-3 py-1 rounded-xl"
-              >
-                <p className="text-[#080808]">Code</p>
-              </a>
-            </div>
           </div>
         </div>
       </div>
+
+      <a
+        className="mt-14 border-2 border-white/20 rounded-lg px-4 py-2 hover:border-white"
+        href="https://github.com/Bedlam343?tab=repositories"
+        target="_blank"
+      >
+        Checkout GitHub For More
+      </a>
     </div>
   );
 };
