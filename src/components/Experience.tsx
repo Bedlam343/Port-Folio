@@ -5,7 +5,10 @@ type ExperienceProps = {
 
 const Experience = ({ id }: ExperienceProps) => {
   return (
-    <div id={id} className="bg-white py-[60px] flex flex-col items-center">
+    <div
+      id={id}
+      className="bg-white py-[40px] sm:py-[60px] flex flex-col items-center"
+    >
       <p className="text-[#080808] text-center text-4xl font-extrabold mb-[5px] sm:mb-[45px]">
         Experience
       </p>

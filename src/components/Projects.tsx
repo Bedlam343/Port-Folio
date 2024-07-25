@@ -4,7 +4,10 @@ type ProjectsProps = {
 
 const Projects = ({ id }: ProjectsProps) => {
   return (
-    <div id={id} className="bg-[#080808] py-[60px] flex flex-col items-center">
+    <div
+      id={id}
+      className="bg-[#080808] py-[40px] sm:py-[60px] flex flex-col items-center"
+    >
       <p className="text-white text-center text-4xl font-extrabold mb-[25px] sm:mb-[45px]">
         Projects
       </p>
