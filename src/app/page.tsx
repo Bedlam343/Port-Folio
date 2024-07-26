@@ -22,7 +22,17 @@ const Home = () => {
       <Experience id="experience" />
       <Projects id="projects" />
 
-      <div id="get-in-touch" className="bg-white h-screen"></div>
+      <div className="bg-white py-10">
+        <p className="text-[#9C9C9C] text-center">
+          Made with <span className="text-[#3d3d3d]">Next.js</span> and{' '}
+          <span className="text-[#3d3d3d]">TailwindCSS</span> by yours truly.{' '}
+          <br />
+          Coded in <span className="text-[#3d3d3d]">
+            Visual Studio Code
+          </span>. <br /> Deployed with{' '}
+          <span className="text-[#3d3d3d]">Vercel</span>.
+        </p>
+      </div>
     </div>
   );
 };

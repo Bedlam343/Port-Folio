@@ -30,12 +30,12 @@ const Header = ({ onLinkClick }: HeaderProps) => {
           >
             Projects
           </li>
-          <li
+          {/* <li
             onClick={() => onLinkClick('get-in-touch')}
             className="hover:text-white hover:cursor-pointer flex items-center"
           >
             Get In Touch
-          </li>
+          </li> */}
           <li className="flex gap-1 sm:gap-2">
             <a
               href="https://www.linkedin.com/in/singhjagjit01/"
