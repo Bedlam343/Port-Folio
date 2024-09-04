@@ -66,8 +66,8 @@ const Projects = ({ id }: ProjectsProps) => {
           />
 
           <img
-            className="w-full h-full object-cover opacity-10"
-            src="/projects/skilled-coders.png"
+            className="w-full h-full object-cover opacity-15"
+            src="/projects/codemasons.png"
           />
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
