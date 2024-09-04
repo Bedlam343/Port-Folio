@@ -80,7 +80,7 @@ const Projects = ({ id }: ProjectsProps) => {
                 another online school, it is a{' '}
                 <span className="text-orange-100">mission</span> and a{' '}
                 <span className="text-orange-100">promise</span> to create the
-                world's{' '}
+                world&apos;s{' '}
                 <span className="text-orange-100">best programmers</span>. With
                 some of the{' '}
                 <span className="text-orange-100">best teachers</span> from
