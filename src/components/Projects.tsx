@@ -73,24 +73,21 @@ const Projects = ({ id }: ProjectsProps) => {
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
               <p className="text-center text-xl text-orange-200 mb-1">
-                SKILLED CODERS
+                CODEMASONS
               </p>
               <p>
-                A bootcamp website made with{' '}
-                <span className="text-orange-100">React</span>,{' '}
-                <span className="text-orange-100">Node.js</span>,{' '}
-                <span className="text-orange-100">Express</span>, and{' '}
-                <span className="text-orange-100">Material-UI</span> that allows
-                users to <span className="text-orange-100">sign up</span> for an
-                account and allows them to{' '}
-                <span className="text-orange-100">publish</span>,{' '}
-                <span className="text-orange-100">delete</span>, and{' '}
-                <span className="text-orange-100">update</span> bootcamps, as
-                well as{' '}
-                <span className="text-orange-100">
-                  browse through bootcamps
-                </span>{' '}
-                created by other users.
+                <span className="text-orange-100">Codemasons</span> is not just
+                another online school, it is a{' '}
+                <span className="text-orange-100">mission</span> and a{' '}
+                <span className="text-orange-100">promise</span> to create the
+                world's{' '}
+                <span className="text-orange-100">best programmers</span>. With
+                some of the{' '}
+                <span className="text-orange-100">best teachers</span> from
+                around the globe, including some highly renown{' '}
+                <span className="text-orange-100">3rd Degree Codemasons</span>,
+                this is the place to take your programming skills to the next
+                level.
               </p>
             </div>
           </div>
