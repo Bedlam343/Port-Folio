@@ -33,7 +33,7 @@ const Projects = ({ id }: ProjectsProps) => {
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
-              <p className="text-center text-xl text-red-200 mb-1">THEIA</p>
+              <p className="text-center text-xl text-red-200 mb-3">THEIA</p>
               <p>
                 <span className="text-red-100">Theia</span> is the name of a
                 software suite that makes custom{' '}
@@ -66,13 +66,13 @@ const Projects = ({ id }: ProjectsProps) => {
           />
 
           <img
-            className="w-full h-full object-cover opacity-15"
+            className="w-full h-full object-cover opacity-10"
             src="/projects/codemasons.png"
           />
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
-              <p className="text-center text-xl text-orange-200 mb-1">
+              <p className="text-center text-xl text-orange-200 mb-3">
                 CODEMASONS
               </p>
               <p>
@@ -95,6 +95,42 @@ const Projects = ({ id }: ProjectsProps) => {
 
         <div
           className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
+          overflow-hidden hover:cursor-pointer hover:border-green-300"
+        >
+          <a
+            className="h-full w-full absolute z-50"
+            href="https://type-shooter.netlify.app"
+            target="_blank"
+          />
+
+          <img
+            className="w-full h-full object-cover opacity-25"
+            src="/projects/typeshooter.png"
+          />
+
+          <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
+            <div>
+              <p className="text-center text-xl text-green-200 mb-3">
+                TYPE SHOOTER
+              </p>
+              <p>
+                An <span className="text-green-100">ingenious blend</span> of a{' '}
+                <span className="text-green-100">2D shooter</span> game and a{' '}
+                <span className="text-green-100">typing game</span>. With{' '}
+                <span className="text-green-100">100 levels</span> of increasing
+                difficulty, Type Shooter is a{' '}
+                <span className="text-green-100">formidable challenge</span> for
+                even the mightest of the keyboard masters. Made with{' '}
+                <span className="text-green-100">React</span>,{' '}
+                <span className="text-green-100">TypeScript</span>, and{' '}
+                <span className="text-green-100">Three.js</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
           overflow-hidden hover:cursor-pointer hover:border-pink-300"
         >
           <a
@@ -110,7 +146,7 @@ const Projects = ({ id }: ProjectsProps) => {
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
-              <p className="text-center text-xl text-pink-200 mb-1">
+              <p className="text-center text-xl text-pink-200 mb-3">
                 TIC-TAC-TOE
               </p>
               <p>
@@ -145,7 +181,7 @@ const Projects = ({ id }: ProjectsProps) => {
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
-              <p className="text-center text-xl text-blue-200 mb-1">
+              <p className="text-center text-xl text-blue-200 mb-3">
                 CALCULATOR
               </p>
               <p>
@@ -160,7 +196,7 @@ const Projects = ({ id }: ProjectsProps) => {
           </div>
         </div>
 
-        <div
+        {/* <div
           className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
           overflow-hidden hover:cursor-pointer hover:border-green-300"
         >
@@ -177,7 +213,7 @@ const Projects = ({ id }: ProjectsProps) => {
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
-              <p className="text-center text-xl text-green-200 mb-1">
+              <p className="text-center text-xl text-green-200 mb-3">
                 A-MAZE-ING
               </p>
               <p>
@@ -192,7 +228,7 @@ const Projects = ({ id }: ProjectsProps) => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div
           className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
@@ -211,7 +247,7 @@ const Projects = ({ id }: ProjectsProps) => {
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
-              <p className="text-center text-xl text-amber-200 mb-1">
+              <p className="text-center text-xl text-amber-200 mb-3">
                 UNJUMBLER
               </p>
               <p>
@@ -231,7 +267,7 @@ const Projects = ({ id }: ProjectsProps) => {
 
       <a
         className="mt-14 border-2 border-white/20 rounded-lg px-4 py-2 hover:border-white"
-        href="https://github.com/Bedlam343?tab=repositories"
+        href="https://github.com/Bedlam343"
         target="_blank"
       >
         Checkout GitHub For More
