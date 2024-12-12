@@ -70,11 +70,11 @@ const Experience = ({ id }: ExperienceProps) => {
               complexity to help minimize the pilot{"'"}s cognitive load and
               assist in critical decision making during high-stress conditions.
               <br /> <br />
-              Awarded the "
+              Awarded the &quot;
               <span className="underline font-bold">
                 Most Outstanding Student Project 2024
               </span>
-              " at the 2024 THI Academic Celebration Ceremony.
+              &quot; at the 2024 THI Academic Celebration Ceremony.
             </p>
 
             <div className="flex mt-4 gap-3 flex-wrap">
