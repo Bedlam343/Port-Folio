@@ -36,7 +36,7 @@ const Experience = ({ id }: ExperienceProps) => {
               Feb 2024 - Jun 2024
             </p>
             <p className="text-[#080808] mt-[10px]">
-              Collaborated with a multi-national and cross-functional team of 10
+              {/* Collaborated with a multi-national and cross-functional team of 10
               students from San Jose State University and Technische Hochschule
               Ingolstadt to create a small suite of software, named{' '}
               <span className="text-[#eea33b] font-bold hover:underline">
@@ -54,7 +54,27 @@ const Experience = ({ id }: ExperienceProps) => {
               allowed a fighter jet pilot to control many fighter drones while
               also piloting their ownship. The UI adapts to the pilot{"'"}s
               changing stress level, as well as to world events, to aid the
-              pilot in critical decision making during high-stress conditions.
+              pilot in critical decision making during high-stress conditions. */}
+              Collaborated with an international, cross-functional team of 10
+              students from San Jose State University and Technische Hochschule
+              Ingolstadt to create a situationally-aware interface (
+              <span className="text-[#eea33b] font-bold hover:underline">
+                <a
+                  href="https://github.com/orgs/thi-sjsu-project/repositories"
+                  target="_blank"
+                >
+                  Theia
+                </a>
+              </span>
+              ) which responds to external events and adapts its visual
+              complexity to help minimize the pilot{"'"}s cognitive load and
+              assist in critical decision making during high-stress conditions.
+              <br /> <br />
+              Awarded the "
+              <span className="underline font-bold">
+                Most Outstanding Student Project 2024
+              </span>
+              " at the 2024 THI Academic Celebration Ceremony.
             </p>
 
             <div className="flex mt-4 gap-3 flex-wrap">
@@ -124,8 +144,8 @@ const Experience = ({ id }: ExperienceProps) => {
               Jun 2023 - May 2024
             </p>
             <p className="text-[#080808] mt-[10px]">
-              Developed, maintained, and shipped production code for 2
-              high-quality medical web-applications. Worked closely with
+              Took charge of and shipped high-quality production code for 2
+              complex, customer-facing web-applications. Worked closely with
               cross-functional teams, including developers and product managers,
               to bring innovative ideas to life. Conducted code reviews and
               performed unit and integration testing to ensure code integrity

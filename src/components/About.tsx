@@ -21,8 +21,8 @@ const About = ({ id, onLinkClick }: AboutProps) => {
               Full-Stack Software Engineer
             </p>
             <p className="text-[#9C9C9C] font-mono mb-6 sm:mb-0 text-center sm:text-start">
-              I like building things for the web. And others seem to like what I
-              build. So I keep building. Life is better when kept simple.
+              I like coding and I am pretty good at it. Don{"'"}t know what else
+              to say.
             </p>
           </div>
 
