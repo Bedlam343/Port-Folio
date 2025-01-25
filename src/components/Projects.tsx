@@ -18,39 +18,40 @@ const Projects = ({ id }: ProjectsProps) => {
       <div className="grid grid-cols-1 md:grid-cols-2 pt-4 px-5 sm:py-0 sm:px-6 lg:px-0 sm:max-w-[908px] gap-x-10 gap-y-10 sm:gap-y-14">
         <div
           className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
-          overflow-hidden hover:cursor-pointer hover:border-red-300"
+          overflow-hidden hover:cursor-pointer hover:border-red-200"
         >
           <a
             className="h-full w-full absolute z-50"
-            href="https://github.com/orgs/thi-sjsu-project/repositories"
+            href="https://spotify-music-muse.netlify.app/"
             target="_blank"
           />
 
           <img
             className="w-full h-full object-cover opacity-25"
-            src="/projects/fighter-jets.jpg"
+            src="/projects/music_muse.png"
           />
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
-              <p className="text-center text-xl text-red-200 mb-3">THEIA</p>
-              <p>
-                <span className="text-red-100">Theia</span> is the name of a
-                software suite that makes custom{' '}
-                <span className="text-red-100">
-                  Multi-Modal Adaptive User Interfaces
-                </span>
-                , demonstrated via an adapative UI that allowed a fighter jet
-                pilot to{' '}
-                <span className="text-red-100">
-                  control many fighter drones
-                </span>{' '}
-                while also piloting their own ship. The{' '}
-                <span className="text-red-100">
-                  UI adapted to changes in the pilot&apos;s stress level as well
-                  as to external world events.
-                </span>
+              <p className="text-center text-xl text-red-200 mb-3">
+                MUSIC MUSE
               </p>
+              <p>
+                <span className="text-red-100">Music Muse</span> is a
+                state-of-the-art{' '}
+                <span className="text-red-100">music recommender</span>. Dive in
+                and expand your music horizons. Connect your Spotify account and
+                <span className="text-red-100">
+                  {' '}
+                  save tracks to your Spotify playlist
+                </span>{' '}
+                from right within the app!
+              </p>
+            </div>
+            <div>
+              Powered by <span className="text-red-100">React</span>,{' '}
+              <span className="text-red-100">Spotify Web API</span>, and,{' '}
+              <span className="text-red-100">OpenAI API</span>.
             </div>
           </div>
         </div>
@@ -76,10 +77,7 @@ const Projects = ({ id }: ProjectsProps) => {
                 CODEMASONS
               </p>
               <p>
-                <span className="text-orange-100">Codemasons</span> is not just
-                another online school, it is a{' '}
-                <span className="text-orange-100">mission</span> and a{' '}
-                <span className="text-orange-100">promise</span> to create the
+                <span className="text-orange-100">Codemasons</span> creates the
                 world&apos;s{' '}
                 <span className="text-orange-100">best programmers</span>. With
                 some of the{' '}
@@ -90,12 +88,58 @@ const Projects = ({ id }: ProjectsProps) => {
                 level.
               </p>
             </div>
+            <div>
+              <p>
+                Made with <span className="text-orange-100">React</span> and{' '}
+                <span className="text-orange-100">Node.js</span>.
+              </p>
+            </div>
           </div>
         </div>
 
         <div
           className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
           overflow-hidden hover:cursor-pointer hover:border-green-300"
+        >
+          <a
+            className="h-full w-full absolute z-50"
+            href="https://github.com/orgs/thi-sjsu-project/repositories"
+            target="_blank"
+          />
+
+          <img
+            className="w-full h-full object-cover opacity-25"
+            src="/projects/fighter-jets.jpg"
+          />
+
+          <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
+            <div>
+              <p className="text-center text-xl text-green-200 mb-3">THEIA</p>
+              <p>
+                A <span className="text-green-100">situationally-aware</span>,{' '}
+                <span className="text-green-100">multi-modal</span>, and{' '}
+                <span className="text-green-100">adaptive user interface</span>{' '}
+                for fighter jets, which responds to external events, including
+                pilot&apos;s stress level, and{' '}
+                <span className="text-green-100">
+                  adjusts its visual complexity
+                </span>{' '}
+                to minimize pilot&apos;s cognitive load.
+              </p>
+            </div>
+            <div>
+              <p>
+                Built with <span className="text-green-100">React</span>,{' '}
+                <span className="text-green-100">Redux</span>, and{' '}
+                <span className="text-green-100">TypeScript</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
+          overflow-hidden hover:cursor-pointer hover:border-pink-300"
         >
           <a
             className="h-full w-full absolute z-50"
@@ -110,20 +154,25 @@ const Projects = ({ id }: ProjectsProps) => {
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
-              <p className="text-center text-xl text-green-200 mb-3">
+              <p className="text-center text-xl text-pink-200 mb-3">
                 TYPE SHOOTER
               </p>
               <p>
-                An <span className="text-green-100">ingenious blend</span> of a{' '}
-                <span className="text-green-100">2D shooter</span> game and a{' '}
-                <span className="text-green-100">typing game</span>. With{' '}
-                <span className="text-green-100">100 levels</span> of increasing
+                An <span className="text-pink-100">ingenious blend</span> of a{' '}
+                <span className="text-pink-100">2D shooter</span> game and a{' '}
+                <span className="text-pink-100">typing game</span>. With{' '}
+                <span className="text-pink-100">100 levels</span> of increasing
                 difficulty, Type Shooter is a{' '}
-                <span className="text-green-100">formidable challenge</span> for
-                even the mightest of the keyboard masters. Made with{' '}
-                <span className="text-green-100">React</span>,{' '}
-                <span className="text-green-100">TypeScript</span>, and{' '}
-                <span className="text-green-100">Three.js</span>.
+                <span className="text-pink-100">formidable challenge</span> for
+                even the mightest of the keyboard masters.
+              </p>
+            </div>
+            <div>
+              <p>
+                {' '}
+                Made with <span className="text-pink-100">React</span>,{' '}
+                <span className="text-pink-100">TypeScript</span>, and{' '}
+                <span className="text-pink-100">Three.js</span>.
               </p>
             </div>
           </div>
@@ -131,7 +180,7 @@ const Projects = ({ id }: ProjectsProps) => {
 
         <div
           className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
-          overflow-hidden hover:cursor-pointer hover:border-pink-300"
+          overflow-hidden hover:cursor-pointer hover:border-blue-300"
         >
           <a
             className="h-full w-full absolute z-50"
@@ -146,19 +195,24 @@ const Projects = ({ id }: ProjectsProps) => {
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
-              <p className="text-center text-xl text-pink-200 mb-3">
+              <p className="text-center text-xl text-blue-200 mb-3">
                 TIC-TAC-TOE
               </p>
               <p>
-                A <span className="text-pink-100">stylish</span> and{' '}
-                <span className="text-pink-100">minimal</span> tic-tac-toe game
-                built with <span className="text-pink-100">React</span>,{' '}
-                <span className="text-pink-100">TypeScript</span>, and{' '}
-                <span className="text-pink-100">TailwindCSS</span>. A perfect
-                way to spend a chill sunday afternoon with friends or family.
-                Includes <span className="text-pink-100">turn-tracking</span>{' '}
-                and <span className="text-pink-100">score-tracking</span> to
-                make sure your opponent does not cheat.
+                A <span className="text-blue-100">stylish</span> and{' '}
+                <span className="text-blue-100">minimal</span> tic-tac-toe game.
+                A perfect way to spend a chill sunday afternoon with friends or
+                family. Includes{' '}
+                <span className="text-blue-100">turn-tracking</span> and{' '}
+                <span className="text-blue-100">score-tracking</span> to make
+                sure your opponent does not cheat.
+              </p>
+            </div>
+            <div>
+              <p>
+                Built with <span className="text-blue-100">React</span>,{' '}
+                <span className="text-blue-100">TypeScript</span>, and{' '}
+                <span className="text-blue-100">TailwindCSS</span>.
               </p>
             </div>
           </div>
@@ -166,7 +220,7 @@ const Projects = ({ id }: ProjectsProps) => {
 
         <div
           className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
-          overflow-hidden hover:cursor-pointer hover:border-blue-300"
+          overflow-hidden hover:cursor-pointer hover:border-amber-300"
         >
           <a
             className="h-full w-full absolute z-50"
@@ -181,16 +235,21 @@ const Projects = ({ id }: ProjectsProps) => {
 
           <div className="absolute top-0 h-full py-4 px-6 flex flex-col justify-between">
             <div>
-              <p className="text-center text-xl text-blue-200 mb-3">
+              <p className="text-center text-xl text-amber-200 mb-3">
                 CALCULATOR
               </p>
               <p>
-                An <span className="text-blue-100">intuitive</span> and{' '}
-                <span className="text-blue-100">easy-to-use</span> calculator
-                built using <span className="text-blue-100">React</span>,{' '}
-                <span className="text-blue-100">TypeScript</span>, and{' '}
-                <span className="text-blue-100">Material-UI</span>. Now, you can
-                safely ditch all other calculators you have (at your own risk).
+                An <span className="text-amber-100">intuitive</span> and{' '}
+                <span className="text-amber-100">easy-to-use</span> calculator.
+                Now, you can safely ditch all other calculators you have (at
+                your own risk).
+              </p>
+            </div>
+            <div>
+              <p>
+                Crafted using <span className="text-amber-100">React</span>,{' '}
+                <span className="text-amber-100">TypeScript</span>, and{' '}
+                <span className="text-amber-100">Material-UI</span>.
               </p>
             </div>
           </div>
@@ -230,7 +289,7 @@ const Projects = ({ id }: ProjectsProps) => {
           </div>
         </div> */}
 
-        <div
+        {/* <div
           className="h-[300px] border-[1px] border-white/20 rounded-lg bg relative 
           overflow-hidden hover:cursor-pointer hover:border-amber-300"
         >
@@ -262,7 +321,7 @@ const Projects = ({ id }: ProjectsProps) => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <a
