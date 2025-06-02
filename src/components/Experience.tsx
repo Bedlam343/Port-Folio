@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import Chips from './ui/Chips';
+
 type ExperienceProps = {
   id: string;
 };
@@ -16,7 +18,66 @@ const Experience = ({ id }: ExperienceProps) => {
         (Done With Dedication)
       </p> */}
 
-      <div className="flex flex-col gap-[15px] sm:gap-[45px] w-[100%] sm:px-8 md:px-6 lg:px-4 sm:max-w-[908px]">
+      <div className="pointer-events-none flex flex-col gap-[15px] sm:gap-[45px] w-[100%] sm:px-8 md:px-6 lg:px-4 sm:max-w-[908px]">
+        <div className="min-h-[300px] flex flex-col sm:flex-row">
+          <div
+            id="acmsjsu-picture"
+            className="w-[100%] sm:w-[50%] flex items-center justify-center relative pr-auto sm:pr-8"
+          >
+            <img
+              className="w-[80%] sm:w-[75%] rounded-sm"
+              src="acmsjsu_logo.png"
+              alt="ACM@SJSU Logo"
+            />
+
+            {/* <a
+              href="https://promaxo.com/"
+              className="absolute h-[100%] w-[50%]"
+              target="_blank"
+            /> */}
+          </div>
+
+          <div className="w-[100%] px-6 sm:px-0 sm:w-[50%] sm:pt-[25px]">
+            {/* <div className="bg-[#D0E6FF] ml-[10px] w-fit px-4 py-1 font-bold rounded-full mb-[15px]">
+              <a
+                className="text-[#000AFF]"
+                href="https://promaxo.com/"
+                target="_blank"
+              >
+                Promaxo
+              </a>
+            </div> */}
+
+            <p className="text-[#176095] font-extrabold text-xl sm:text-2xl">
+              Web Developer
+            </p>
+            <p className="text-[#9C9C9C] font-sans text-sm">
+              Jan 2025 - May 2025
+            </p>
+            <p className="text-[#080808] mt-[10px]">
+              Implemented responsive and pixel-perfect user interfaces using
+              React, TypeScript, and TailwindCSS. Used Drizzle ORM with
+              PostgreSQL to perform type-safe database queries and streamline
+              backend development. Integrated TanStack React Router with React
+              Query to enable route-aware data fetching and caching, improving
+              performance and user experience.
+            </p>
+
+            <Chips
+              className="bg-[#176095] text-[#ffffff]"
+              items={[
+                'React',
+                'Express.js',
+                'TypeScript',
+                'PostgreSQL',
+                'Drizzle ORM',
+                'React Query',
+                'TanStack React Router',
+              ]}
+            />
+          </div>
+        </div>
+
         <div className="min-h-[300px] flex flex-col-reverse sm:flex-row">
           <div className="w-[100%] px-6 sm:px-0 sm:w-[50%] sm:pt-[25px]">
             {/* <div className="bg-[#FFF6E9] ml-[10px] w-fit px-4 py-1 font-bold rounded-full mb-[15px]">
@@ -29,8 +90,8 @@ const Experience = ({ id }: ExperienceProps) => {
               </a>
             </div> */}
 
-            <p className="text-[#080808] font-extrabold text-xl sm:text-2xl">
-              Student Software Engineer
+            <p className="text-black font-extrabold text-xl sm:text-2xl">
+              Software Engineer
             </p>
             <p className="text-[#9C9C9C] font-sans text-sm">
               Feb 2024 - Jun 2024
@@ -58,7 +119,7 @@ const Experience = ({ id }: ExperienceProps) => {
               Collaborated with an international, cross-functional team of 10
               students from San Jose State University and Technische Hochschule
               Ingolstadt to create a situationally-aware interface (
-              <span className="text-[#eea33b] font-bold hover:underline">
+              <span className="font-bold hover:underline pointer-events-auto">
                 <a
                   href="https://github.com/orgs/thi-sjsu-project/repositories"
                   target="_blank"
@@ -77,17 +138,10 @@ const Experience = ({ id }: ExperienceProps) => {
               &quot; at the 2024 THI Academic Celebration Ceremony.
             </p>
 
-            <div className="flex mt-4 gap-3 flex-wrap">
-              {['React', 'Redux', 'TypeScript', 'TailwindCSS'].map((tech) => (
-                <div
-                  key={tech}
-                  className="bg-[#fdefdb] rounded-full flex items-center justify-center
-                  w-fit px-4 py-1 font-bold"
-                >
-                  <p className="text-[#eea33b]">{tech}</p>
-                </div>
-              ))}
-            </div>
+            <Chips
+              className="bg-black text-white"
+              items={['React', 'Redux', 'TypeScript', 'TailwindCSS', 'Figma']}
+            />
           </div>
 
           <div
@@ -95,7 +149,7 @@ const Experience = ({ id }: ExperienceProps) => {
             className="w-[100%] sm:w-[50%] flex items-center justify-center relative"
           >
             <img
-              className="w-[50%] sm:w-[60%] rounded-sm"
+              className="w-[50%] sm:w-[70%] rounded-sm"
               src="sri-logo.png"
               alt="SRI Logo"
             />
@@ -137,7 +191,7 @@ const Experience = ({ id }: ExperienceProps) => {
               </a>
             </div> */}
 
-            <p className="text-[#080808] font-extrabold text-xl sm:text-2xl">
+            <p className="text-[#1F9BEB] font-extrabold text-xl sm:text-2xl">
               Full-Stack Engineering Intern
             </p>
             <p className="text-[#9C9C9C] font-sans text-sm">
@@ -152,27 +206,18 @@ const Experience = ({ id }: ExperienceProps) => {
               and quality.
             </p>
 
-            <div className="flex mt-4 flex-wrap gap-3">
-              {[
+            <Chips
+              className="bg-[#1F9BEB] text-white"
+              items={[
                 'React',
-                'Redux',
                 'Node.js',
                 'JavaScript',
                 'MongoDB',
-                'HTML',
-                'CSS',
+                'Redux',
                 'GCP',
                 'MUI',
-              ].map((tech) => (
-                <div
-                  key={tech}
-                  className="bg-[#D0E6FF] rounded-full flex items-center justify-center
-                  w-fit px-4 py-1 font-bold"
-                >
-                  <p className="text-[#2c8dfc]">{tech}</p>
-                </div>
-              ))}
-            </div>
+              ]}
+            />
           </div>
         </div>
       </div>

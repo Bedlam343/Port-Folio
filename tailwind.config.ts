@@ -9,7 +9,20 @@ module.exports = {
   content: ['./src/**/*.{ts,tsx}'],
   darkMode: 'class',
   theme: {
-    // rest of the code
+    extend: {
+      keyframes: {
+        toOpacity100: {
+          '100%': { opacity: '1' },
+        },
+        toOpacity0: {
+          '100%': { opacity: '0' },
+        },
+      },
+      animation: {
+        'to-opacity-100': 'toOpacity100 0.5s ease-out forwards',
+        'to-opacity-0': 'toOpacity0 0.5s ease-out forwards',
+      },
+    },
   },
   plugins: [
     // rest of the code
@@ -21,7 +34,7 @@ module.exports = {
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme('colors'));
   let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
   );
 
   addBase({
