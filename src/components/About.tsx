@@ -18,11 +18,10 @@ const About = ({ id, onLinkClick }: AboutProps) => {
               JAGJIT SINGH
             </p>
             <p className="text-xl lg:text-2xl mb-2 sm:mb-6 text-center sm:text-start">
-              Full-Stack Software Engineer
+              Software Engineer
             </p>
             <p className="text-[#9C9C9C] font-mono mb-6 sm:mb-0 text-center sm:text-start">
-              I like coding and I am pretty good at it. Don{"'"}t know what else
-              to say.
+              Coding greatness, one line at a time.
             </p>
           </div>
 

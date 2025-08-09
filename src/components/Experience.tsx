@@ -19,6 +19,90 @@ const Experience = ({ id }: ExperienceProps) => {
       </p> */}
 
       <div className="pointer-events-none flex flex-col gap-[15px] sm:gap-[45px] w-[100%] sm:px-8 md:px-6 lg:px-4 sm:max-w-[908px]">
+        <div className="min-h-[300px] flex flex-col-reverse sm:flex-row">
+          <div className="w-[100%] px-6 sm:px-0 sm:w-[50%] sm:pt-[25px]">
+            {/* <div className="bg-[#FFF6E9] ml-[10px] w-fit px-4 py-1 font-bold rounded-full mb-[15px]">
+              <a
+                className="text-[#FFA217]"
+                href="https://www.sri.com/"
+                target="_blank"
+              >
+                SRI
+              </a>
+            </div> */}
+
+            <p className="text-[#3A97ED] font-extrabold text-xl sm:text-2xl">
+              AI Engineer Intern
+            </p>
+            <p className="text-[#9C9C9C] font-sans text-sm">
+              Jun 2025 - Aug 2025
+            </p>
+            <p className="text-[#080808] mt-[10px]">
+              {/* Collaborated with a multi-national and cross-functional team of 10
+              students from San Jose State University and Technische Hochschule
+              Ingolstadt to create a small suite of software, named{' '}
+              <span className="text-[#eea33b] font-bold hover:underline">
+                <a
+                  href="https://github.com/orgs/thi-sjsu-project/repositories"
+                  target="_blank"
+                >
+                  Theia
+                </a>
+              </span>
+              , that makes custom Multi-Modal Adpative User Interfaces.
+              <br />
+              <br />
+              Theia was then demonstrated via a Multi-Modal Adaptive UI that
+              allowed a fighter jet pilot to control many fighter drones while
+              also piloting their ownship. The UI adapts to the pilot{"'"}s
+              changing stress level, as well as to world events, to aid the
+              pilot in critical decision making during high-stress conditions. */}
+              Created a{' '}
+              <span className="text-[#3A97ED] font-semibold">
+                fully-autonomous
+              </span>
+              , LLM-powered{' '}
+              <span className="text-[#3A97ED] font-semibold">
+                meeting scheduling solution
+              </span>{' '}
+              that makes remote collaboration effortless. Resolved critical
+              performance bottlenecks and application failures on EC2 instances
+              by analyzing system logs. Engineered RESTful APIs using
+              CodeIgniter 4 that seamlessly powered dynamic front-end UIs and
+              applications.
+            </p>
+
+            <Chips
+              className="bg-[#3A97ED] text-white"
+              items={[
+                'CodeIgniter 4',
+                'JavaScript',
+                'AWS',
+                'AgentQL',
+                'Playwright',
+                'Adobe XD',
+              ]}
+            />
+          </div>
+
+          <div
+            id="teamcalai-picture"
+            className="w-[100%] sm:w-[50%] flex items-center justify-center relative"
+          >
+            <img
+              className="w-[50%] sm:w-[80%] rounded-sm"
+              src="teamcalai-logo.png"
+              alt="TEAMCALAI Logo"
+            />
+
+            {/* <a
+              href="https://www.sri.com/"
+              className="absolute h-[100%] w-[50%]"
+              target="_blank"
+            /> */}
+          </div>
+        </div>
+
         <div className="min-h-[300px] flex flex-col sm:flex-row">
           <div
             id="acmsjsu-picture"
@@ -55,8 +139,11 @@ const Experience = ({ id }: ExperienceProps) => {
               Jan 2025 - May 2025
             </p>
             <p className="text-[#080808] mt-[10px]">
-              Implemented responsive and pixel-perfect user interfaces using
-              React, TypeScript, and TailwindCSS. Used Drizzle ORM with
+              Implemented responsive and{' '}
+              <span className="text-[#176095] font-semibold">
+                pixel-perfect user interfaces
+              </span>{' '}
+              using React, TypeScript, and TailwindCSS. Used Drizzle ORM with
               PostgreSQL to perform type-safe database queries and streamline
               backend development. Integrated TanStack React Router with React
               Query to enable route-aware data fetching and caching, improving
@@ -198,12 +285,15 @@ const Experience = ({ id }: ExperienceProps) => {
               Jun 2023 - May 2024
             </p>
             <p className="text-[#080808] mt-[10px]">
-              Took charge of and shipped high-quality production code for 2
-              complex, customer-facing web-applications. Worked closely with
-              cross-functional teams, including developers and product managers,
-              to bring innovative ideas to life. Conducted code reviews and
-              performed unit and integration testing to ensure code integrity
-              and quality.
+              Took charge of and{' '}
+              <span className="text-[#1F9BEB] font-semibold">
+                shipped high-quality production code
+              </span>{' '}
+              for 2 complex, customer-facing web-applications. Worked closely
+              with cross-functional teams, including developers and product
+              managers, to bring innovative ideas to life. Conducted code
+              reviews and performed unit and integration testing to ensure code
+              integrity and quality.
             </p>
 
             <Chips
