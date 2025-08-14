@@ -21,7 +21,7 @@ const About = ({ id, onLinkClick }: AboutProps) => {
               Software Engineer
             </p>
             <p className="text-[#9C9C9C] font-mono mb-6 sm:mb-0 text-center sm:text-start">
-              Coding greatness, one line at a time.
+              Coding the world, one line at a time.
             </p>
           </div>
 
