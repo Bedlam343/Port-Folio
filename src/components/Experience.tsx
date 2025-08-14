@@ -35,7 +35,7 @@ const Experience = ({ id }: ExperienceProps) => {
               AI Engineer Intern
             </p>
             <p className="text-[#9C9C9C] font-sans text-sm">
-              Jun 2025 - Aug 2025
+              Jun 2025 - Present
             </p>
             <p className="text-[#080808] mt-[10px]">
               {/* Collaborated with a multi-national and cross-functional team of 10
