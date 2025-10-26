@@ -32,7 +32,7 @@ const Experience = ({ id }: ExperienceProps) => {
             </div> */}
 
             <p className="text-[#3A97ED] font-extrabold text-xl sm:text-2xl">
-              AI Engineer Intern
+              AI Developer
             </p>
             <p className="text-[#9C9C9C] font-sans text-sm">
               Jun 2025 - Present
@@ -280,15 +280,13 @@ const Experience = ({ id }: ExperienceProps) => {
               Jun 2023 - May 2024
             </p>
             <p className="text-[#080808] mt-[10px]">
-              Took charge of and{' '}
               <span className="text-[#1F9BEB] font-semibold">
-                shipped high-quality production code
+                Shipped high-quality production code
               </span>{' '}
-              for 2 complex, customer-facing web-applications. Worked closely
-              with cross-functional teams, including developers and product
-              managers, to bring innovative ideas to life. Conducted code
-              reviews and performed unit and integration testing to ensure code
-              integrity and quality.
+              for 2 customer-facing web applications using React and Node.js.
+              Added new REST API endpoints to support feature growth and better
+              user experience. Used MongoDB to build and query flexible,
+              document-based data models, supporting efficient data retrieval.
             </p>
 
             <Chips
