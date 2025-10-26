@@ -57,19 +57,14 @@ const Experience = ({ id }: ExperienceProps) => {
               also piloting their ownship. The UI adapts to the pilot{"'"}s
               changing stress level, as well as to world events, to aid the
               pilot in critical decision making during high-stress conditions. */}
-              Created a{' '}
-              <span className="text-[#3A97ED] font-semibold">
-                fully-autonomous
-              </span>
-              , LLM-powered{' '}
-              <span className="text-[#3A97ED] font-semibold">
-                meeting scheduling solution
-              </span>{' '}
-              that makes remote collaboration effortless. Resolved critical
-              performance bottlenecks and application failures on EC2 instances
-              by analyzing system logs. Engineered RESTful APIs using
-              CodeIgniter 4 that seamlessly powered dynamic front-end UIs and
-              applications.
+              Built an{' '}
+              <span className="text-[#3A97ED] font-semibold">agentic AI</span>{' '}
+              scheduling system that automates remote team coordination. Created
+              an AgentQL-powered web scraper that standardized availability
+              collection across 10+ services. Engineered an LLM-driven state
+              machine enabling autonomous scheduling decisions. Diagnosed and
+              resolved EC2 application bottlenecks and failures through
+              log-driven performance fixes
             </p>
 
             <Chips
